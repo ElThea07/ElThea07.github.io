@@ -1,5 +1,21 @@
-$max-mobile-xs:414px;
-$max-mobile:768px;
-$max-tablet:991px;
-$min-laptop:1229px;
-$font-family-old:'Old Standard TT', serif;
+//Colors
+$white:#ffffff;
+
+$black:#000000;
+$sable:#060606;
+$charcoal:#2e1503;
+$silver:#505050;
+
+$tangerine:#ffaf6d;
+$orange:#ffa500;
+
+//Typography
+$poppins-family: 'Poppins';
+$ubuntu-family: 'Ubuntu';
+
+//Media Grid
+$min-sm:576px;
+$min-md:768px;
+$min-lg:992px;
+$min-xl:1200px;
+$min-xxl:1400px;

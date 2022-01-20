@@ -1,195 +1,129 @@
+//MAIN
 .main{
-    width: 55%;
-    position: relative;
-    float: right;
-   height: 968px;
-   z-index: 0;
-    img{
-        width: 100%;
-        height: 100%;
-        
-    }
-    @include laptop-view{
-        width: 55%;
-        img{
-            width: 100%;
-            height: 100%;
-            
-        }
-    }
-    @include tablet-view{
-        width: 100%;
-        top: -150px;
-    }
-    @include mobile-view{
-        width: 100%;
-        height: auto;
-        top: 0;
-    }
+    width: 100%;
+    height: auto;
+    font-family: $ubuntu-family
 }
-.article {
-    width: 45%;
-    position: relative;
-    height: 620px;
-    padding-top: 10px;
-    left: 45px;
-    z-index: 3;
-    h1{
-        font-size: 64px;
-        margin-left: 80px;
-    }
-    p{
-        position: absolute;
-        font-size: 20px;
-        color: #646266;
-        width: 350px;
-        margin-left: 80px;
-        letter-spacing: 1px;
-        word-spacing: 1px;
-        top: 230px;
-    }
-    @include laptop-view{
-        width: 45%;
-        left: -30px;
-        h1{
-           width: 80%;
-            
-        }
-        p{
-            top: 260px;
 
-        }
-    }
-    @include tablet-view{
-        width: 100%;
-        top: -520px;
-        left: 0;
-        background: #fff;
-        h1{ position: absolute;
-            left: 70px;
-        }
-        p{
-            position: absolute;
-            width: 60%;
-            left: 70px;
-        }
-    }
-    @include mobile-view{
-        position: absolute;
-        width: 100%;
-        top: 600px;
-        left: 0;
-        background: #fff;
-        h1{
-            position:absolute;
-           left: 1%;
+//SECTION
+.section{
+    border: 1px solid $sable;
+    padding: 30px 20px;
+    // CARDS
+    &__card{
+        border: 1px dotted $sable;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        h3{
+            font-size: 1.5rem;
+            margin: 20px 10px;
         }
         p{
-            position: absolute;
-            width: 70%;
-            top: 200px;
-            left: 1%;
+            margin: 20px 10px;
+            letter-spacing: 0.1rem;
+            
+        }
+        h5{
+            font-size: 1.1rem;
+            margin: 10px 10px;
+        }
+        //CARD 1
+        &-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                @include img-object-fit(300px,fill,0)
+            }   
+        }
+        //CARD 2
+        &-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                @include img-object-fit(400px,fill,0)
+            }
         }
     }
-    @include mobile-xs-view{
-        top: 435px;
-        background: #fff;
-        h1{
-            font-size: 40px;
-        }
+    //ICONS
+    &__icon{
+        align-items: center;
+        margin: 0px 10px;
         p{
-            top: 130px;
+            margin-right: 10px;
+            margin-left: 2px;
         }
     }
 }
-.section {
-    width: 45%;
-    position: relative;
-    background: #000000;
-    height: 348px;
-    z-index: 4;
-    h3{
-        position: absolute;
-        color: #fff;
-        font-size: 35px;
-        top: 40px;
-        left: 125px;
-        
-    }
-    h5{
-        position: absolute;
-        color: #fff;
-        font-size: 19px;
-        left: 125px;
-        bottom: 125px;
-        font-weight: lighter;
+
+//ARTICLE
+.article{
+    border: 1px solid $sable;
+    width: 100%;
+    //IMAGEN PNG
+    &__option{
+        display: flex;  
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 20px;
+        img{
+            margin-top: 20px;
+            width: 180px;
+            border-radius: 90px;
+            border: 1px solid $black;
         }
-    input{
-        position: absolute;
-        width: 300px;
-        height: 45px;
-        left: 125px;
-        bottom: 110px;
-        background: #fff;
-        color: #000;     
-    }
-    &__bar {
-        position: absolute;
-        width: 70px;
-        height: 348px;
-        right: 0%;
-        background: #fff;
-    }
-    h6{
-        font-size: 30px;
-       -webkit-transform: rotate(90deg); 
-       position: absolute;
-       display:inline-flex;
-        place-items: center;
-      bottom: 80px;
-      left: -26px;
-    }
-    @include laptop-view{
         h3{
-            left: 50px;
+            font-size: 1.2rem;
         }
-        h5{
-            left: 50px;
+        i{
+            margin-left: 10px;
         }
-        input{
-            width: 280px;
-            left: 50px;
+        //PARRAFO
+        &-2{
+            justify-content: center;
+            letter-spacing: 0.1rem;
         }
-    }
-    @include tablet-view{
-        position: absolute;
-        width: 100%;
-        bottom: -800px;
-    }
-    @include mobile-view{
-        width: 100%;
-        h3{
-            left: 90px;
+        &-2-1{
+            width: 96%;
         }
-        h5{
-            left: 90px;
+        //SUB-TITULO
+        &-3{  
+            justify-content: center;
         }
-        input {
-            left: 90px;
+        &-3-1{  
+            width: 96%;
+            height: 30px;
+            background: $silver;
+            justify-content: center;
+            align-items: center;
+            h3{
+                color: $white;
+            }    
         }
-    }
-    @include mobile-xs-view{
-        width: 100%;
-        bottom: -650px;
-        h3{
-            
-            left: 25px;
+        //LISTAS
+        &-4{
+            ul{
+                list-style: circle; 
+                margin-top: 20px;         
+            }
+            li{
+                margin-top: 10px; 
+            }
+            a{
+                text-decoration: none;
+                width: 100%;            
+            }
         }
-        h5{
-            left: 25px; 
-        }
-        input{
-            left: 25px;
+        //IMAGEN SVG
+        &-5{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            svg{
+                width: 300px;
+            }
         }
     }
 }

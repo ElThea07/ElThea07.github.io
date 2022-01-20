@@ -19,22 +19,18 @@
   /**
    * Remove the margin in all browsers.
    */
+   
    body *{
-     //border: 1px solid red;
+    //border: 1px solid red;
     box-sizing: border-box;
-    overflow: hidden;
-    }
+    font-family: $poppins-family;
+  }
+  
   body {
     margin: 0;
     padding: 0;
-    font-family: $font-family-old;
-    @include tablet-view{
-      height: 900px;
-    }
-    @include mobile-xs-view{
-      height: 900px;
-    }
   }
+  
   /**
    * Render the `main` element consistently in IE.
    */

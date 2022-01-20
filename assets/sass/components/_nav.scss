@@ -1,76 +1,81 @@
-.burgerbutton{
-    display: none;
-    @include mobile-view{
-        position: absolute;
-        display: block;
-    right: 2%;
-    font-size: 30px;
-    }
-    }
-.nav{
-    height: 150px;
+//NAVEGADOR
+.nav {
+    width: 100%;
+    height: 60px;
     display: flex;
-    background: #fff;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
-    z-index: 5;
+    background: $black;
+    
     &__logo{
-        display: grid;
-        place-items: center;
-        width: 150px;
-        height: 150px;
-        background: #000;     
-        a{
-            position: absolute;
-            text-decoration: none;
-            color: #fff;
-            font-size: 25px;
+        margin-left: 15px;
+        img{
+            width: 35px;
         }
     }
     &__links{
-        position: absolute;
-        right: 2%;
-        
-        @include mobile-view{
-            display: none;
-            position: fixed;
-            width: 100%;
-            height: 68px;
-            top:150px;
-            left: 0;
-            background: #fff;
-            opacity: 40%;
+        width: 120%;
+        position:fixed;
+        top:60px;
+        left: -40px;
+        background: $sable;
+        opacity: 80%;
+        ul{
+            width: 130px;
+            display: block;
+            list-style: none;
             a{
-                font-size: 0.9rem;
-                margin-left: 10px;
-                color: #000;
-                display: block;
-                text-transform: uppercase;
+                color: $white;
+                text-decoration: none;
+                font-weight: bold;
+        }
+        a:hover{
+            color: $orange;
+        }
+}
+        // LINKS LG A MAS     
+        @media (min-width:$min-lg){
+            width: 350px;
+            position: relative;
+            background: none;
+            top: 0px;
+            opacity: 100%;
+            ul{
+                width: 350px;
+                display: flex;
+                list-style: none;
+                a{
+                    color: $white;
+                    text-decoration: none;
+                    font-weight: bold;
+                    margin-left: 20px;
+                }
             }
-        }  
-    }
-    &__link{
-        text-decoration: none;
-        margin-right: 70px;
-        color: #000;
-        font-size: 18px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-    }
-    @include laptop-view{
-        &__link{
-            margin-right: 35px;
-        }
-    }
-    @include tablet-view{
-        &__link {
-            margin-right: 35px;
+            
         }
     }
 }
-#burger{
-    display: none;
-}
-#burger:checked ~ .nav__links{
+
+//BURGER
+.burgerbutton{
     display: block;
-}
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+    color: $white;
+    @media (min-width:$min-lg){
+        display: none;
+    }
+    }
+    .burgerbutton:hover{
+        color: $orange;
+    }
+
+
+    #burger{
+        display:none;
+    }
+    #burger:checked ~ .nav__links{
+        display: block;
+
+    }

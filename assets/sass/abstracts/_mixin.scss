@@ -1,23 +1,8 @@
-// Pantalla mobile
-@mixin mobile-xs-view {
-    @media (max-width:#{$max-mobile-xs}){
-        @content;
-    }   
+//MIXIN IMG RESPONSIVE
+@mixin img-object-fit($objectfit-height:200px, $object-fit:cover, $objectfit-position:0){
+    width: 98%;
+    height: $objectfit-height;
+    object-fit: $object-fit;
+    object-position: $objectfit-position;
 }
-@mixin mobile-view {
-    @media (max-width:#{$max-mobile}){
-        @content;
-    }   
-}
-// Pantalla tablet
-@mixin tablet-view {
-    @media (max-width:#{$max-tablet}){
-        @content;
-    }   
-}
-//Pantalla laptop
-@mixin laptop-view {
-    @media (max-width:#{$min-laptop}){
-        @content;
-    }   
-}
+

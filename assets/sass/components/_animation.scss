@@ -1,0 +1,36 @@
+//SYMBOL TRANSLATE INFINITI LINEAR
+.symbol{
+    animation: 1.9s traslate infinite linear alternate;
+    &-2{
+        animation: 1.9s traslate infinite linear alternate;
+    }
+    &-3{
+        animation: 1.9s traslate infinite linear alternate;
+    }
+}
+@keyframes traslate{
+    0%{
+        transform: translateX(145px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+//GEAR ROTATE INFINITE LINEAR
+.gear{
+    animation: 3s rotate infinite linear;
+    transform-origin: 80% 80%;
+    &-2{
+        animation: 3s rotate infinite linear;
+        transform-origin: 80% 80%;
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

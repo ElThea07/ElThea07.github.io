@@ -1,11 +1,21 @@
-// abstracts
+// ABSTRACTS
 @import'abstracts/mixin';
 @import'abstracts/variables';
-// components
-@import 'components/buttons';
-@import'components/nav';
-// base
+
+// BASE
 @import'base/reset';
 @import'base/typography';
-// pages
+
+// COMPONENTS
+@import'components/animation';
+@import'components/buttons';
+@import'components/footer';
+@import'components/header';
+@import'components/nav';
+@import'components/position';
+
+// LAYOUT
+@import'layout/grid';
+
+// PAGES
 @import'pages/home';
