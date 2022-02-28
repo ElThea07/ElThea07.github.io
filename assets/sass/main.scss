@@ -7,9 +7,9 @@
 @import'base/typography';
 
 // COMPONENTS
-@import'components/animation';
 @import'components/buttons';
 @import'components/footer';
+@import'components/form';
 @import'components/header';
 @import'components/nav';
 @import'components/position';
@@ -19,3 +19,6 @@
 
 // PAGES
 @import'pages/home';
+
+//THEMES
+@import'themes/themes';

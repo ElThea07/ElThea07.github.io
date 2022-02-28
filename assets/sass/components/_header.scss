@@ -1,9 +1,19 @@
-//HEADER IMG SVG
-.header{
-    width: 100%;
+//HEADER
+.clearfix{
+    float: none;
+    clear: both;
+}
+#logo{
     display: flex;
     justify-content: center;
-    img{
-        width: 800px;
-    }
+    align-items: center;
+    font-family: Verdana, Arial;
+    font-size: 30px;
+    color: white;   
+    width: 485px;
+    height: 120px;
+    margin-bottom: 20px;
+    float: left;
+    text-transform: uppercase;
+
 }

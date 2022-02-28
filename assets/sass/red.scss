@@ -1,0 +1,30 @@
+body {
+    background: url('../img/rojo.jpg');
+    background-attachment: fixed;
+  }
+
+#logo{
+    background: #CA3413; 
+}
+
+#menu{
+    li:hover{
+        background: #CA3413;
+    }
+}
+
+.botton-more{
+    background: #CA3413;
+}
+.ui-state-active{
+    background: #CA3413 !important;
+    border: 1px solid #851818 !important;
+}
+#reloj{  
+    color: #CA3413;
+    border: 3px dashed #CA3413;  
+}
+form input[type="submit"]:hover{
+    background: #CA3413;
+    color: white;
+}

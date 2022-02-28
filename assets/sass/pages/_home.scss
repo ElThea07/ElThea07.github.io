@@ -1,129 +1,77 @@
 //MAIN
-.main{
-    width: 100%;
-    height: auto;
-    font-family: $ubuntu-family
+#main{
+    width: 65%;
+    height: 2200px;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 25px;
+    background: white;
+    box-shadow: 0px 0px 2px gray;
 }
 
-//SECTION
-.section{
-    border: 1px solid $sable;
-    padding: 30px 20px;
-    // CARDS
-    &__card{
-        border: 1px dotted $sable;
-        padding-top: 10px;
-        margin-bottom: 10px;
-        h3{
-            font-size: 1.5rem;
-            margin: 20px 10px;
+#posts{
+    width: 60%;
+    font-family: Helvetica, Arial;
+    float: left;
+    .post{
+        padding: 7px;
+        .date{
+            display: block;
+            color: gray;
+            margin-top: -20px;
         }
         p{
-            margin: 20px 10px;
-            letter-spacing: 0.1rem;
-            
+            margin-top: 10px;
+            margin-bottom: 20px;
+            line-height: 22px;
+            text-align: justify;
         }
-        h5{
-            font-size: 1.1rem;
-            margin: 10px 10px;
-        }
-        //CARD 1
-        &-1{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img{
-                @include img-object-fit(300px,fill,0)
-            }   
-        }
-        //CARD 2
-        &-2{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img{
-                @include img-object-fit(400px,fill,0)
-            }
-        }
-    }
-    //ICONS
-    &__icon{
-        align-items: center;
-        margin: 0px 10px;
-        p{
-            margin-right: 10px;
-            margin-left: 2px;
-        }
+
     }
 }
 
-//ARTICLE
-.article{
-    border: 1px solid $sable;
-    width: 100%;
-    //IMAGEN PNG
-    &__option{
-        display: flex;  
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        padding-bottom: 20px;
-        img{
-            margin-top: 20px;
-            width: 180px;
-            border-radius: 90px;
-            border: 1px solid $black;
-        }
-        h3{
-            font-size: 1.2rem;
-        }
-        i{
-            margin-left: 10px;
-        }
-        //PARRAFO
-        &-2{
-            justify-content: center;
-            letter-spacing: 0.1rem;
-        }
-        &-2-1{
-            width: 96%;
-        }
-        //SUB-TITULO
-        &-3{  
-            justify-content: center;
-        }
-        &-3-1{  
-            width: 96%;
-            height: 30px;
-            background: $silver;
-            justify-content: center;
-            align-items: center;
-            h3{
-                color: $white;
-            }    
-        }
-        //LISTAS
-        &-4{
-            ul{
-                list-style: circle; 
-                margin-top: 20px;         
-            }
-            li{
-                margin-top: 10px; 
-            }
-            a{
-                text-decoration: none;
-                width: 100%;            
-            }
-        }
-        //IMAGEN SVG
-        &-5{
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            svg{
-                width: 300px;
-            }
+#sidebar{
+    font-family: Helvetica, Arial;
+    width: 31%;
+    float: right;
+    h4{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        line-height: 10px;
+        color: #333;
+        background: url(../img/lines.png);
+        span{
+            background: white;
         }
     }
+    img{
+        @include img-object-fit(100%,fill,0)
+    }
+    p{
+        font-size: 15px;
+        text-align: justify;
+    }
 }
+//alto de slider
+.bx-wrapper, .bx-viewport {
+    height: 250px !important; 
+}
+
+#box{
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+    #acordeon{
+        margin-top: 20px;
+    }
+    #reloj{
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Helvetica, Arial;
+        width: 30%;
+        padding: 30px;
+        margin: 0 auto;
+    }
+}
+
