@@ -1,0 +1,8 @@
+//MIXIN IMG RESPONSIVE
+@mixin img-object-fit($objectfit-height:200px, $object-fit:cover, $objectfit-position:0){
+    width: 98%;
+    height: $objectfit-height;
+    object-fit: $object-fit;
+    object-position: $objectfit-position;
+}
+

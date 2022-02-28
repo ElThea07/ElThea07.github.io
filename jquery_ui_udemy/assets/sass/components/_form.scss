@@ -1,0 +1,51 @@
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]
+form input[type="years"],select{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+form input[type="submit"]{
+    background: #eee ;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#form_contact{
+    width: 50%;
+    margin-top: 15px;
+    font-family: Helvetica, Arial;
+    label{
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+.form-error{
+     font-size: 11px;
+     background: linear-gradient(rgba(248, 215, 218,0.9), rgba(248, 215, 218,0.9));
+     border: 1px solid rgb(138, 3, 3, 0.5);
+     padding: 10px;
+     width: 100%;
+     border-radius: 3px;
+     li{
+         color: rgb(132, 32, 41);
+     }	
+ }
+.help-block{
+    color: rgb(132, 32, 41)
+}
+ b, strong {
+     font-size: 18px;
+     color: rgb(132, 32, 41);
+     text-align: center;
+    font-weight: bolder;
+}

@@ -1,0 +1,77 @@
+//MAIN
+#main{
+    width: 65%;
+    height: 2200px;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 25px;
+    background: white;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#posts{
+    width: 60%;
+    font-family: Helvetica, Arial;
+    float: left;
+    .post{
+        padding: 7px;
+        .date{
+            display: block;
+            color: gray;
+            margin-top: -20px;
+        }
+        p{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            line-height: 22px;
+            text-align: justify;
+        }
+
+    }
+}
+
+#sidebar{
+    font-family: Helvetica, Arial;
+    width: 31%;
+    float: right;
+    h4{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        line-height: 10px;
+        color: #333;
+        background: url(../img/lines.png);
+        span{
+            background: white;
+        }
+    }
+    img{
+        @include img-object-fit(100%,fill,0)
+    }
+    p{
+        font-size: 15px;
+        text-align: justify;
+    }
+}
+//alto de slider
+.bx-wrapper, .bx-viewport {
+    height: 250px !important; 
+}
+
+#box{
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+    #acordeon{
+        margin-top: 20px;
+    }
+    #reloj{
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Helvetica, Arial;
+        width: 30%;
+        padding: 30px;
+        margin: 0 auto;
+    }
+}
+
