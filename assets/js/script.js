@@ -114,7 +114,7 @@ if(window.location.href.indexOf('about') > -1){
 //WATCH HTML
 if(window.location.href.indexOf('watch') > -1){
     setInterval(function(){
-        var reloj = moment().format("hh:mm:ss");
+        var reloj = moment().format("MMM Do YYYY, h:mm:ss a");
     $("#reloj").html(reloj)
     },1000);
     
