@@ -11,17 +11,19 @@
     <link id="theme" rel="stylesheet" href="assets/css/green.css">
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- slide -->
+    <!-- SLIDE -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
-    <!-- moment -->
+    <!-- MOMENT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
+    <!-- PLUGIN VALIDATION -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <!-- SCRIPT -->
     <script src="assets/js/script.js"></script>
 </head>
 <body>
-    <!-- themes -->
+    <!-- THEMES -->
     <div id="selector-theme">
         <div id="to-green"></div>
         <div id="to-red"></div>
@@ -29,15 +31,15 @@
     </div>
 
  <main id="main">
-     <!-- Cabecera -->
+     <!-- HEADER -->
      <header>
          <div id="logo">
              <h1>Proyecto JS</h1>
          </div>
     </header>
-    <!-- Clear float -->
+    <!-- CLEAR FIX -->
     <div class="clearfix"></div>
-    <!-- navbar -->
+    <!-- NAVBAR -->
     <nav id="menu">
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -47,7 +49,7 @@
         </ul>
     </nav>
      
-     <!-- slider -->
+     <!-- SLIDER -->
      <div id="slider">
         <div class="bxslider">
             <div><img src="assets/img/hojas.jpg" title="Hojas"></div>
@@ -55,10 +57,10 @@
             <div><img src="assets/img/cielo.jpg" title="Cielo"></div>
           </div>
      </div>
-     <!-- Clear float -->
+     <!-- CLEAR FIX -->
     <div class="clearfix"></div>
     
-     <!-- contenido -->
+     <!-- CONTENIDO -->
      <section id="content">
          <div id="posts">
              
@@ -71,15 +73,15 @@
              </div>
              <div id="login">
                 <h4><span>Identificate</span></h4>
-                <form action="">
+                <form action="" method="POST">
                     <label for="name">Nombre</label>
-                    <input type="text" name="name" id="form_name">
+                    <input type="text" name="name" data-validation="alphanumeric" id="form_name">
 
                     <label for="email">Correo</label>
-                    <input type="text" name="email">
+                    <input type="text" name="email" data-validation="email">
 
                     <label for="password">Contraseña</label>
-                    <input type="text" name="password">
+                    <input type="password" name="password">
 
                     <input type="submit" value="Entrar">
                 </form>
@@ -89,7 +91,7 @@
      </section>
      <div id="final"></div>
  </main>
- <!-- footer -->
+ <!-- FOOTER -->
  <footer>
      Master en JS y JQuery
      <a href="#" class="subir">Ir Arriba</a>

@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="assets/js/jquery-ui-1.13.1/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="assets/js/jquery-ui-1.13.1/jquery-ui.theme.min.css">
     <script type="text/javascript" src="assets/js/jquery-ui-1.13.1/jquery-ui.min.js"></script>
+    <!-- PLUGIN VALIDATION -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <!-- SCRIPTS -->
     <script src="assets/js/script.js"></script>
 </head>
@@ -86,15 +88,15 @@
              </div>
              <div id="login">
                 <h4><span>Identificate</span></h4>
-                <form action="">
+                <form action="" method="POST">
                     <label for="name">Nombre</label>
-                    <input type="text" name="name" id="form_name">
+                    <input type="text" name="name" data-validation="alphanumeric" id="form_name">
 
                     <label for="email">Correo</label>
-                    <input type="text" name="email">
+                    <input type="text" name="email" data-validation="email">
 
                     <label for="password">Contraseña</label>
-                    <input type="text" name="password">
+                    <input type="password" name="password">
 
                     <input type="submit" value="Entrar">
                 </form>

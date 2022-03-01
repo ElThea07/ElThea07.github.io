@@ -21,13 +21,22 @@ $('.subir').click(function(e){
     return false;
 });
 
+
+
 //LOGIN FALSO
-$("#login form").submit(function(){
+
+$.validate({
+    lang: 'es',
+    errorMessagePosition: 'top',
+    scrollToTopOnError: true  
+});
+
+$("#login form").submit(function(e){ 
     var form_name = $("#form_name").val();
     localStorage.setItem("form_name", form_name);
 });
 var form_name = localStorage.getItem("form_name", form_name);
-if(form_name != null && form_name != "undefined"){
+if(form_name != null && form_name != "undefined"){  
     var about_parrafo = $("#about p");
     about_parrafo.html("<br><strong>Bienvenido, "+ form_name+"</strong>");
     about_parrafo.append("<a href='#' id='logout'>Cerrar sesión</a>");
@@ -37,6 +46,8 @@ if(form_name != null && form_name != "undefined"){
         location.reload();
     });
 }
+
+
 
 
 
@@ -111,11 +122,6 @@ if(window.location.href.indexOf('contact') > -1){
         dateFormat: 'dd-mm-yy'
     });
     
-    $.validate({
-        lang: 'es',
-        errorMessagePosition: 'top',
-        scrollToTopOnError: true
-    });
 };
     
 
