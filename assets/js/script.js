@@ -31,7 +31,7 @@ $.validate({
     scrollToTopOnError: true  
 });
 
-$("#login form").submit(function(e){ 
+$("#login form").submit(function(){ 
     var form_name = $("#form_name").val();
     localStorage.setItem("form_name", form_name);
 });
