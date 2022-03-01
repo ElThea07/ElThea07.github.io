@@ -25,6 +25,10 @@ $('.subir').click(function(e){
 
 //LOGIN FALSO
 
+$("form input[name='date']").datepicker({
+    dateFormat: 'dd-mm-yy'
+});
+
 $.validate({
     lang: 'es',
     errorMessagePosition: 'top',
@@ -118,9 +122,7 @@ if(window.location.href.indexOf('watch') > -1){
 
 //CONTACT HTML
 if(window.location.href.indexOf('contact') > -1){
-    $("form input[name='date']").datepicker({
-        dateFormat: 'dd-mm-yy'
-    });
+    
     
 };
     
